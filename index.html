@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-black min-vh-100">
+        <div class="loading bg-black" id="loading">
+            <div id="loading-icon">
+                <span class="loader"></span>
+            </div>
+        </div>
+        <nav class="min-vh-100 position-fixed top-0 d-flex">
+            <div class="hidden-menu position-fixed min-vh-100 d-flex flex-column justify-content-between bg-black p-4">
+                <div class="nav-list">
+                    <ul class="list-unstyled">
+                        <li class="my-3"><a href="#" class="text-decoration-none text-light" onclick="getSearch()">Search</a></li>
+                        <li class="my-3"><a href="#" class="text-decoration-none text-light" onclick="getCategories()">Categories</a></li>
+                        <li class="my-3"><a href="#" class="text-decoration-none text-light" onclick="getArea()">Area</a></li>
+                        <li class="my-3"><a href="#" class="text-decoration-none text-light" onclick="getIngredients()">Ingredients</a></li>
+                        <li class="my-3"><a href="#" class="text-decoration-none text-light" onclick="contactForm()">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <div class="icons text-light">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <p class="text-light">Copyright Â&copy; 2019 All Rights <br> Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-nav position-fixed d-flex flex-column justify-content-between p-3 bg-light text-center min-vh-100">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <div class="d-flex flex-column" id="openAside">
+                    <i class="fa-solid open-close-icon fa-2x fa-x d-none close"></i>
+                    <i class="fa-solid fa-bars fa-2x open"></i>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="container-fluid">
+            <div class="row g-3" id="rowData">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="col-md-3">
+        <div class="position-relative overflow-hidden rounded-2 cursor-pointer">
+            <img class="w-100 image" src="images/meal-7.jpg" alt="">
+            <div class="image-overlay w-100 h-100 position-absolute top-100 rounded-2 text-center p-3">
+                <h3>kekhwii</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptatem.</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
